@@ -1,18 +1,22 @@
 import './style.css'
 
 const PLAN_DATA = {
-    free: { label: 'Free', price: '€0 / Monat' },
-    pro: { label: 'Pro', price: '€0,99 / Monat' },
-    premium: { label: 'Premium', price: '€2,99 / Monat' },
+    free: { label: 'Free', price: '€0 / Month' },
+    pro: { label: 'Pro', price: '€0,99 / Month' },
+    premium: { label: 'Premium', price: '€2,99 / Month' },
 }
 
 let selectedPlan = null
 
+const summary = document.getElementById('plan-summary')
+const form = document.getElementById('checkout-form')
+const success = document.getElementById('success')
+
 function setPlan(planKey) {
     selectedPlan = planKey
-    const summary = document.getElementById('plan-summary')
     const data = PLAN_DATA[planKey]
-    summary.textContent = `Ausgewählter Plan: ${data.label} (${data.price}).`
+    summary.textContent = `Plan chosen: ${data.label} (${data.price}).`
+    summary.focus()
 }
 
 document.querySelectorAll('[data-plan]').forEach((el) => {
@@ -21,13 +25,12 @@ document.querySelectorAll('[data-plan]').forEach((el) => {
 
 document.getElementById('year').textContent = String(new Date().getFullYear())
 
-const form = document.getElementById('checkout-form')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
     if (!selectedPlan) {
-        document.getElementById('plan-summary').textContent = 'Bitte wähle zuerst einen Plan aus, bevor du fortfährst.'
-        document.getElementById('plan-summary').focus?.()
+        document.getElementById('plan-summary').textContent = 'Please select a plan first before continuing.'
+        document.getElementById('plan-summary').focus()
         return
     }
 
@@ -36,6 +39,6 @@ form.addEventListener('submit', (e) => {
         return
     }
 
-    document.getElementById('success').hidden = false
-    document.getElementById('success').scrollIntoView({ behavior: 'smooth' })
+    success.hidden = false
+    success.scrollIntoView({ behavior: 'smooth' })
 })

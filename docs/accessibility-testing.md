@@ -7,11 +7,22 @@
 
 ## Test scope
 Tested Sites/States:
-- Landing (Startseite)
-- Pricing
-- Checkout (Validierung: Fehlerzustände)
-- Success-State
+- Landing (Hero + Navigation)
+- Pricing (Plan cards + plan selection)
+- Checkout:
+    - Submit without plan selected (plan warning)
+    - Submit with missing required fields (native validation)
+- Success state (after valid submit)
 
-## Findings & Fixes (ongoing)
+### 28.12.2025 (localhost)
+- axe DevTools: 0 violations
+- Lighthouse: Accessibility score 100
+- Manual checks:
+    - Keyboard navigation (Tab/Shift+Tab) works, focus visible
+    - Skip link jumps to main content
+    - Form inputs have labels, required fields validated
+    - Color contrast adjusted for focus/links
+    - zoom 200% works and responsive
 
-- fixed contrast issue: bg to focus contrast now over 4.5:1
+## Findings & fixes (ongoing log)
+- 2025-12-28: Increased focus/link contrast to meet minimum contrast requirements. -> 4.5
