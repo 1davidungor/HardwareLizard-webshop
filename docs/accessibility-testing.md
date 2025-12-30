@@ -25,4 +25,5 @@ Tested Sites/States:
     - zoom 200% works and responsive
 
 ## Findings & fixes (ongoing log)
-- 2025-12-28: Increased focus/link contrast to meet minimum contrast requirements. -> 4.5
+- 28-12-2025: Increased focus/link contrast to meet minimum contrast requirements. -> 4.5
+- 30-12-2025: Increased text/background contrast to meet minimum contrast requirements while in checkout success state -> 4.5
