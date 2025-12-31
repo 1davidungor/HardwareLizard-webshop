@@ -7,6 +7,9 @@ const __dirname = dirname(__filename)
 
 export default defineConfig({
     base: '/HardwareLizard-webshop/',
+    preview: {
+        open: '/HardwareLizard-webshop/',
+    },
     build: {
         rollupOptions: {
             input: {
