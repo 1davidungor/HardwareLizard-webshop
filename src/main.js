@@ -1,4 +1,4 @@
-import './style.css'
+import '../public/style.css'
 
 const PLAN_DATA = {
     free: {label: 'Free', price: '€0 / Month'},
