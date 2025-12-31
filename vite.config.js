@@ -10,13 +10,14 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: {
-                main: resolve(__dirname, 'index.html'),
-                accessibility: resolve(__dirname, 'src/pages/accessibility/accessibility.html'),
-                legalNotice: resolve(__dirname, 'src/pages/legal-notice/legal-notice.html'),
-                dataPrivacy: resolve(__dirname, 'src/pages/data-privacy/data-privacy.html'),
-                license: resolve(__dirname, 'src/pages/license/license.html'),
-                aboutUs: resolve(__dirname, 'src/pages/about-us/about-us.html'),
-                moreInfo: resolve(__dirname, 'src/pages/more-info/more-info.html'),
+                index: resolve(__dirname, 'index.html'),
+
+                'accessibility': resolve(__dirname, 'src/pages/accessibility/accessibility.html'),
+                'legal-notice': resolve(__dirname, 'src/pages/legal-notice/legal-notice.html'),
+                'data-privacy': resolve(__dirname, 'src/pages/data-privacy/data-privacy.html'),
+                'license': resolve(__dirname, 'src/pages/license/license.html'),
+                'about-us': resolve(__dirname, 'src/pages/about-us/about-us.html'),
+                'more-info': resolve(__dirname, 'src/pages/more-info/more-info.html'),
             },
         },
     },
