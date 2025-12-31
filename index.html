@@ -1,184 +1,179 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HardwareLizard – choose Hardware-Deals smarter</title>
-  <meta name="description" content="HardwareLizard hilft dir, Hardwarepreise zu vergleichen und Abos zu verwalten – Demo-Webshop (gemockt)." />
-  <link rel="stylesheet" href="src/style.css" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>HardwareLizard – choose Hardware-Deals smarter</title>
+    <meta name="description"
+          content="HardwareLizard hilft dir, Hardwarepreise zu vergleichen und Abos zu verwalten – Demo-Webshop (gemockt)."/>
+    <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <div class="container header-row">
-    <a class="brand" href="#top" aria-label="HardwareLizard Startseite">
-      <span class="brand-mark" aria-hidden="true">HL</span>
-      <span class="brand-name">HardwareLizard</span>
-    </a>
+    <div class="container header-row">
+        <a class="brand" href="#top" aria-label="HardwareLizard Startseite">
+            <span class="brand-mark" aria-hidden="true">HL</span>
+            <span class="brand-name">HardwareLizard</span>
+        </a>
 
-    <nav aria-label="Navigation">
-      <ul class="nav-list">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#checkout">Checkout</a></li>
-        <li><a href="#accessibility">Accessibility</a></li>
-      </ul>
-    </nav>
-  </div>
+        <nav aria-label="Navigation">
+            <ul class="nav-list">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main id="main" tabindex="-1">
-  <section id="top" class="section hero">
-    <div class="container">
-      <h1>Find the best Hardware deals as fast as possible. Navigate the Market like a Pro.</h1>
-      <p class="lead">
-        Today's hardware market can be a maze... prices fluctuate and change on the daily. HardwareLizard bundles price information and helps in choosing the best deal for your needs.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#pricing">View Subscriptions</a>
-        <a class="btn" href="#features">More Info</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="features" class="section">
-    <div class="container">
-      <h2>What HardwareLizard offers</h2>
-      <ul class="feature-list">
-        <li><strong>Price comparisons</strong> from multiple Dealers.</li>
-        <li><strong>Price alerts</strong> for your favored products.</li>
-        <li><strong>Plan-Selection</strong> to better suit your needs (Free/Pro/Premium).</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="pricing" class="section">
-    <div class="container">
-      <h2>choose your plan</h2>
-      <p>Cancellable each month</p>
-
-      <div class="grid">
-        <article class="card" aria-label="Free Plan">
-          <h3>Free</h3>
-          <p class="price">€0<span class="muted"> / Month</span></p>
-          <ul>
-            <li>Basic functions</li>
-            <li>Limited watchlist</li>
-          </ul>
-          <a class="btn primary" href="#checkout" data-plan="free">choose Free</a>
-        </article>
-
-        <article class="card" aria-label="Pro Plan">
-          <h3>Pro</h3>
-          <p class="price">€0,99<span class="muted"> / Month</span></p>
-          <ul>
-            <li>Larger watchlist / more alerts</li>
-            <li>More frequent checks</li>
-          </ul>
-          <a class="btn primary" href="#checkout" data-plan="pro">choose Pro</a>
-        </article>
-
-        <article class="card" aria-label="Premium Plan">
-          <h3>Premium</h3>
-          <p class="price">€2,99<span class="muted"> / Month</span></p>
-          <ul>
-            <li>Unlimited watchlist</li>
-            <li>Extra features</li>
-          </ul>
-          <a class="btn primary" href="#checkout" data-plan="premium">choose Premium</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="checkout" class="section">
-    <div class="container">
-      <h2>Checkout</h2>
-      <p id="plan-summary" class="notice" role="status" tabindex="-1">Please choose a plan first.</p>
-
-      <form id="checkout-form" novalidate>
-        <fieldset class="card">
-          <legend>Contact details</legend>
-
-          <div class="field">
-            <label for="email">E-Mail</label>
-            <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autocomplete="email"
-                    required
-                    aria-describedby="email-hint"
-            />
-            <p class="hint" id="email-hint">We will send you a confirmation mail.</p>
-          </div>
-
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required />
-          </div>
-        </fieldset>
-
-        <fieldset class="card">
-          <legend>Payment details</legend>
-
-          <div class="field">
-            <label for="card">Card number</label>
-            <input id="card" name="card" inputmode="numeric" autocomplete="cc-number" placeholder="0123 4567 8910 1112" required />
-          </div>
-
-          <div class="field-row">
-            <div class="field">
-              <label for="exp">expires (MM/YY)</label>
-              <input id="exp" name="exp" inputmode="numeric" autocomplete="cc-exp" placeholder="01/27" required />
+    <section id="top" class="section hero">
+        <div class="container">
+            <h1>Find the best Hardware deals as fast as possible. Navigate the Market like a Pro.</h1>
+            <p class="lead">
+                Today's hardware market can be a maze... prices fluctuate and change on the daily. HardwareLizard
+                bundles price information and helps in choosing the best deal for your needs.
+            </p>
+            <div class="actions">
+                <a class="btn primary" href="#pricing">View Subscriptions</a>
+                <a class="btn" href="src/pages/more-info/more-info.html">More Info</a>
             </div>
-            <div class="field">
-              <label for="cvc">CVC</label>
-              <input id="cvc" name="cvc" inputmode="numeric" autocomplete="cc-csc" placeholder="123" required />
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>What HardwareLizard offers</h2>
+            <ul class="feature-list">
+                <li><strong>Price comparisons</strong> from multiple Dealers.</li>
+                <li><strong>Price alerts</strong> for your favored products.</li>
+                <li><strong>Plan-Selection</strong> to better suit your needs (Free/Pro/Premium).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2>Choose your plan</h2>
+            <p>Cancellable each month</p>
+
+            <div class="grid">
+                <article class="card" aria-label="Free Plan" id="free">
+                    <h3>Free</h3>
+                    <p class="price">€0<span class="muted"> / Month</span></p>
+                    <ul>
+                        <li>Basic functions</li>
+                        <li>Limited watchlist</li>
+                    </ul>
+                    <button type="button" class="btn primary" tabindex="0" data-plan="free">choose Free</button>
+                </article>
+
+                <article class="card" aria-label="Pro Plan" id="pro">
+                    <h3>Pro</h3>
+                    <p class="price">€0,99<span class="muted"> / Month</span></p>
+                    <ul>
+                        <li>Larger watchlist / more alerts</li>
+                        <li>More frequent checks</li>
+                    </ul>
+                    <button type="button" class="btn primary" data-plan="pro">choose Pro</button>
+                </article>
+
+                <article class="card" aria-label="Premium Plan" id="premium">
+                    <h3>Premium</h3>
+                    <p class="price">€2,99<span class="muted"> / Month</span></p>
+                    <ul>
+                        <li>Unlimited watchlist</li>
+                        <li>Extra features</li>
+                    </ul>
+                    <button type="button" class="btn primary" data-plan="premium">choose Premium</button>
+                </article>
             </div>
-          </div>
+        </div>
+    </section>
 
-          <div class="field">
-            <label class="checkbox">
-              <input id="consent" name="consent" type="checkbox" required />
-              <span>I have read and accept the license terms and privacy policy.</span>
-            </label>
-          </div>
+    <section id="checkout" class="section">
+        <div class="container">
+            <h2>Checkout</h2>
+            <p id="plan-summary" class="notice" role="status" tabindex="-1">Please choose a plan first.</p>
 
-          <button class="btn primary" type="submit">Complete payment</button>
-        </fieldset>
-      </form>
+            <form id="checkout-form" novalidate>
+                <fieldset class="card">
+                    <legend>Contact details</legend>
 
-      <div id="success" class="card success" hidden>
-        <h3>Purchase successful</h3>
-        <p>Thank you! Your subscription has been completed. You will receive a confirmation shortly.</p>
-        <a class="btn" href="#top">Back to home page</a>
-      </div>
-    </div>
-  </section>
+                    <div class="field">
+                        <label for="email">E-Mail</label>
+                        <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                autocomplete="email"
+                                required
+                                aria-describedby="email-hint"
+                        />
+                        <p class="hint" id="email-hint">We will send you a confirmation mail.</p>
+                    </div>
 
-  <section id="accessibility" class="section">
-    <div class="container">
-      <h2>Accessibility</h2>
-      <p>
-        This website was developed with focus on WCAG 2.2 AA. A full accessibility statement will be added.
-      </p>
-    </div>
-  </section>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required/>
+                    </div>
+                </fieldset>
+
+                <fieldset class="card">
+                    <legend>Payment details</legend>
+
+                    <div class="field">
+                        <label for="card">Card number</label>
+                        <input id="card" name="card" inputmode="numeric" autocomplete="cc-number"
+                               placeholder="0123 4567 8910 1112" required/>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="exp">expires (MM/YY)</label>
+                            <input id="exp" name="exp" inputmode="numeric" autocomplete="cc-exp" placeholder="01/27"
+                                   required/>
+                        </div>
+                        <div class="field">
+                            <label for="cvc">CVC</label>
+                            <input id="cvc" name="cvc" inputmode="numeric" autocomplete="cc-csc" placeholder="123"
+                                   required/>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="checkbox">
+                            <input id="consent" name="consent" type="checkbox" required/>
+                            <span>I have read and accept the license terms and privacy policy.</span>
+                        </label>
+                    </div>
+
+                    <button class="btn primary">Complete payment</button>
+                </fieldset>
+            </form>
+
+            <div id="success" class="card success" hidden>
+                <h3>Purchase successful</h3>
+                <p>Thank you! Your subscription has been completed. You will receive a confirmation shortly.</p>
+                <a class="btn" href="#top">Back to home page</a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container footer-row">
-    <p class="muted">© <span id="year"></span> SoftwareLizard – HardwareLizard</p>
-    <ul class="footer-links">
-      <li><a href="#accessibility">Accessibility (placeholder)</a></li>
-      <li><a href="#top">Legal Notice (placeholder)</a></li>
-      <li><a href="#top">Data privacy (placeholder)</a></li>
-      <li><a href="#top">License (placeholder)</a></li>
-      <li><a href="#top">About us (placeholder)</a></li>
-    </ul>
-  </div>
+    <div class="container footer-row">
+        <p class="muted">© <span id="year"></span> SoftwareLizard – HardwareLizard</p>
+        <ul class="footer-links">
+            <li><a href="src/pages/accessibility/accessibility.html">Accessibility</a></li>
+            <li><a href="src/pages/legal-notice/legal-notice.html">Legal Notice</a></li>
+            <li><a href="src/pages/data-privacy/data-privacy.html">Data privacy</a></li>
+            <li><a href="src/pages/license/license.html">License</a></li>
+            <li><a href="src/pages/about-us/about-us.html">About us</a></li>
+        </ul>
+    </div>
 </footer>
 
 <script type="module" src="/src/main.js"></script>

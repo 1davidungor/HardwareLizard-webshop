@@ -1,9 +1,9 @@
 import './style.css'
 
 const PLAN_DATA = {
-    free: { label: 'Free', price: '€0 / Month' },
-    pro: { label: 'Pro', price: '€0,99 / Month' },
-    premium: { label: 'Premium', price: '€2,99 / Month' },
+    free: {label: 'Free', price: '€0 / Month'},
+    pro: {label: 'Pro', price: '€0,99 / Month'},
+    premium: {label: 'Premium', price: '€2,99 / Month'},
 }
 
 let selectedPlan = null
@@ -11,34 +11,54 @@ let selectedPlan = null
 const summary = document.getElementById('plan-summary')
 const form = document.getElementById('checkout-form')
 const success = document.getElementById('success')
+const year = document.getElementById('year')
+
+if (year) {
+    year.textContent = String(new Date().getFullYear())
+}
 
 function setPlan(planKey) {
+
+    if (!summary) return
+
+    if (selectedPlan) {
+        const selectedPlanBefore = document.getElementById(selectedPlan)
+        selectedPlanBefore?.classList.remove('selected')
+    }
+
     selectedPlan = planKey
     const data = PLAN_DATA[planKey]
+
     summary.textContent = `Plan chosen: ${data.label} (${data.price}).`
-    summary.focus()
+
+    const selectedPlanCard = document.getElementById(planKey)
+    selectedPlanCard?.classList.add('selected')
 }
 
 document.querySelectorAll('[data-plan]').forEach((el) => {
     el.addEventListener('click', () => setPlan(el.dataset.plan))
 })
 
-document.getElementById('year').textContent = String(new Date().getFullYear())
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault()
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
+        if (!selectedPlan) {
+            if (summary) {
+                summary.textContent = 'Please select a plan first before continuing.'
+                summary.focus?.()
+            }
+            return
+        }
 
-    if (!selectedPlan) {
-        document.getElementById('plan-summary').textContent = 'Please select a plan first before continuing.'
-        document.getElementById('plan-summary').focus()
-        return
-    }
+        if (!form.checkValidity()) {
+            form.reportValidity()
+            return
+        }
 
-    if (!form.checkValidity()) {
-        form.reportValidity()
-        return
-    }
-
-    success.hidden = false
-    success.scrollIntoView({ behavior: 'smooth' })
-})
+        if (success) {
+            success.hidden = false
+            success.scrollIntoView({behavior: 'smooth'})
+        }
+    })
+}

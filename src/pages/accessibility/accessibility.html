@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Accessibility Statement – HardwareLizard</title>
+    <meta name="description" content="Accessibility statement for the HardwareLizard demo webshop."/>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <div class="container header-row">
+        <a class="brand" href="/index.html" aria-label="HardwareLizard Home">
+            <span class="brand-mark" aria-hidden="true">HL</span>
+            <span class="brand-name">HardwareLizard</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <ul class="nav-list">
+                <li><a href="/index.html#features">Features</a></li>
+                <li><a href="/index.html#pricing">Pricing</a></li>
+                <li><a href="/index.html#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main id="main" tabindex="-1">
+    <section class="section">
+        <div class="container">
+            <h1>Accessibility Statement</h1>
+
+
+            <p>
+                HardwareLizard is committed to providing a website that is accessible to the widest possible audience.
+                We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.2, Level AA.
+            </p>
+
+            <p>
+                This statement applies to the HardwareLizard webshop and website at
+                <a href="https://1davidungor.github.io/HardwareLizard-webshop/">https://1davidungor.github.io/HardwareLizard-webshop/</a>.
+            </p>
+
+            <h2>Conformance status</h2>
+            <p>
+                The website is designed to be conformant with WCAG 2.2 Level AA. We continuously improve accessibility
+                as the project evolves.
+            </p>
+
+            <h2>Accessibility features</h2>
+            <ul>
+                <li>Semantic structure with landmarks (header, navigation, main content, footer).</li>
+                <li>Keyboard operability and visible focus indicators.</li>
+                <li>A “Skip to content” link for faster keyboard navigation.</li>
+                <li>Form inputs with associated labels and required-field validation.</li>
+                <li>Clear status messaging for plan selection and checkout steps.</li>
+            </ul>
+
+            <h2>Testing and evaluation</h2>
+            <p>
+                The site has been evaluated using a combination of automated and manual checks, including:
+            </p>
+            <ul>
+                <li>axe DevTools (browser extension)</li>
+                <li>Lighthouse (Chrome DevTools – Accessibility audit)</li>
+                <li>Manual keyboard testing (Tab / Shift+Tab, focus order, form submission states)</li>
+                <li>WAVE (...)</li>
+            </ul>
+
+            <h2>Known limitations</h2>
+            <p>
+                As of the current state, the website does not have any known content that is not conformant with WCAG
+                2.2 Level AA.
+            </p>
+
+            <h2>Feedback and contact</h2>
+            <p>
+                We strive to constantly improve our site. If you encounter any accessibility barriers that hinder you
+                from fully using our site, please contact us and describe the issue and the page/state where it
+                occurred:
+            </p>
+            <p>
+                <a href="mailto:accessibility@softwarelizard.example">accessibility@softwarelizard.example</a>
+            </p>
+
+            <p>
+                We will get back to you as soon as possible and work on resolving the issue.
+            </p>
+
+            <h2>Creation of this accessibility statement</h2>
+            <p>
+                The assessment of the website's accessibility compliance was carried out in the form of a self-test
+                as well as before mentioned tools according to WCAG 2.2 at conformance level AA in December 2025. <br>
+                <strong>Last updated:</strong> 30-12-2025
+            </p>
+
+        </div>
+    </section>
+</main>
+
+<!--reuse existing footer here -->
+
+<footer class="site-footer">
+    <div class="container footer-row">
+        <p class="muted">© <span id="year"></span> SoftwareLizard – HardwareLizard</p>
+        <ul class="footer-links">
+            <li><a href="#main">Accessibility</a></li>
+            <li><a href="../legal-notice/legal-notice.html">Legal Notice</a></li>
+            <li><a href="../data-privacy/data-privacy.html">Data privacy</a></li>
+            <li><a href="../license/license.html">License</a></li>
+            <li><a href="../about-us/about-us.html">About us</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script type="module">
+    document.getElementById('year').textContent = String(new Date().getFullYear())
+</script>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
