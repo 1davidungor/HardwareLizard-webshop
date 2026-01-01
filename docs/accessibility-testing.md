@@ -1,6 +1,6 @@
 # Accessibility Testing (WCAG 2.2 AA)
 
-## Tools
+## Tools used
 
 - axe DevTools (Browser Extension)
 - WAVE (Browser Extension / Web tool)
@@ -34,3 +34,4 @@ Tested Sites/States:
 - 30-12-2025: Increased text/background contrast to meet minimum contrast requirements while in checkout success
   state -> 4.5
 - 30-12-2025: Manually found that you couldn't reach the "choose {Plan}"-buttons with tab (keyboard) -> fixed
+- TODO: test accessibility.html !

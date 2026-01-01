@@ -21,6 +21,7 @@ export default defineConfig({
                 'license': resolve(__dirname, 'src/pages/license/license.html'),
                 'about-us': resolve(__dirname, 'src/pages/about-us/about-us.html'),
                 'more-info': resolve(__dirname, 'src/pages/more-info/more-info.html'),
+                'trademark-search': resolve(__dirname, 'src/pages/trademark-search/trademark-search.html'),
             },
         },
     },
