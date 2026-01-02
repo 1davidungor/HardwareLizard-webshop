@@ -10,7 +10,7 @@
 ## Findings & Results
 
 **EUIPO eSearch:**  
-For search term "HardwareLizard" with assets Logo-1.png and Logo-2.png:
+For search term "HardwareLizard" with asset HardwareLizard-logo.png:
 
 - 0 Owners found
 - 0 Trademarks found
