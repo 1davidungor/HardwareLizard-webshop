@@ -40,6 +40,9 @@ document.querySelectorAll('[data-plan]').forEach((el) => {
 })
 
 if (form) {
+
+    const successAudio = document.getElementById('success-jingle')
+
     form.addEventListener('submit', (e) => {
         e.preventDefault()
 
@@ -60,5 +63,12 @@ if (form) {
             success.hidden = false
             success.scrollIntoView({behavior: 'smooth'})
         }
+
+        if (successAudio) {
+            successAudio.currentTime = 0
+            successAudio.play().catch(() => {
+            })
+        }
+        
     })
 }

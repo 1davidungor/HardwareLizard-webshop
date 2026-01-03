@@ -104,6 +104,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     object-fit: contain;
 }
 
+.brand-logo-big {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    object-fit: contain;
+}
+
 .nav-list {
     display: flex;
     gap: 14px;
