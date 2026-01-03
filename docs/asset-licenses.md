@@ -30,9 +30,12 @@
 
 ## Illustrations:
 
-| Asset              | Type     | Source        | Author        | License     | Rights                   | Modified |
-|--------------------|----------|---------------|---------------|-------------|--------------------------|----------|
-| info-icon.svg      | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted |
-| features-icon.svg  | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted |
-| pricing-icon.svg   | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted |
-| checkkout-icon.svg | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted |
+| Asset                    | Type             | Source    | Author               | License     | Rights                   | Modified                          |
+|--------------------------|------------------|-----------|----------------------|-------------|--------------------------|-----------------------------------|
+| options-illustration.svg | SVG illustration | undraw.co | Katerina Limpitsouni | MIT License | Commercial use permitted | changed color #6c63ff to: #D16B5A | 
+| gaming-illustration.svg  | SVG illustration | undraw.co | Katerina Limpitsouni | MIT License | Commercial use permitted | changed color #6c63ff to: #D16B5A | 
+| monitor-illustration.svg | SVG illustration | undraw.co | Katerina Limpitsouni | MIT License | Commercial use permitted | changed color #6c63ff to: #D16B5A | 
+| phone-illustration.svg   | SVG illustration | undraw.co | Katerina Limpitsouni | MIT License | Commercial use permitted | changed color #6c63ff to: #D16B5A | 
+| tablet-illustration.svg  | SVG illustration | undraw.co | Katerina Limpitsouni | MIT License | Commercial use permitted | changed color #6c63ff to: #D16B5A | 
+| watch-illustration.svg   | SVG illustration | undraw.co | Katerina Limpitsouni | MIT License | Commercial use permitted | changed color #6c63ff to: #D16B5A | 
+
