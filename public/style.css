@@ -112,6 +112,39 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     object-fit: contain;
 }
 
+.icon {
+    width: 20px;
+    height: 20px;
+    color: var(--accent);
+    vertical-align: middle;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.hero-illustration {
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-illustration {
+        margin: 0;
+        max-width: 520px;
+    }
+}
+
 .nav-list {
     display: flex;
     gap: 14px;
