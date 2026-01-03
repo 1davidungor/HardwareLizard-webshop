@@ -8,9 +8,9 @@
 
 ## Audio:
 
-| Asset                     | Type      | Source     | Author         | License             | Rights              | Modified |
-|---------------------------|-----------|------------|----------------|---------------------|---------------------|----------|
-| HardwareLizard-jingle.mp4 | mp4 audio | self-drawn | SoftwareLizard | All rights reserved | All rights reserved | -        |
+| Asset                     | Type      | Source        | Author         | License             | Rights              | Modified |
+|---------------------------|-----------|---------------|----------------|---------------------|---------------------|----------|
+| HardwareLizard-jingle.mp4 | mp4 audio | self-recorded | SoftwareLizard | All rights reserved | All rights reserved | -        |
 
 ## Text & Fonts:
 
@@ -27,6 +27,7 @@
 | features-icon.svg  | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted | changed color to: #D16B5A |
 | pricing-icon.svg   | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted | changed color to: #D16B5A |
 | checkkout-icon.svg | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted | changed color to: #D16B5A |
+| back-icon.svg      | SVG icon | heroicons.com | Tailwind Labs | MIT License | Commercial use permitted | changed color to: #D16B5A |
 
 ## Illustrations:
 

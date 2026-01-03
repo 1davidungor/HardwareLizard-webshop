@@ -429,3 +429,47 @@ input {
 .success {
     margin-top: 16px;
 }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+thead {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+th,
+td {
+    padding: 12px 14px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    font-weight: 700;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+td {
+    color: var(--muted);
+}
+
+tbody tr:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}

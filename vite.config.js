@@ -22,6 +22,7 @@ export default defineConfig({
                 'about-us': resolve(__dirname, 'src/pages/about-us/about-us.html'),
                 'more-info': resolve(__dirname, 'src/pages/more-info/more-info.html'),
                 'trademark-search': resolve(__dirname, 'src/pages/trademark-search/trademark-search.html'),
+                'copyright': resolve(__dirname, 'src/pages/copyright/copyright.html'),
             },
         },
     },
