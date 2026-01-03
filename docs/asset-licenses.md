@@ -10,14 +10,14 @@
 
 | Asset                     | Type      | Source     | Author         | License             | Rights              | Modified |
 |---------------------------|-----------|------------|----------------|---------------------|---------------------|----------|
-| HardwareLizard-jingle.mp4 | png image | self-drawn | SoftwareLizard | All rights reserved | All rights reserved | -        |
+| HardwareLizard-jingle.mp4 | mp4 audio | self-drawn | SoftwareLizard | All rights reserved | All rights reserved | -        |
 
 ## Text & Fonts:
 
-| Asset         | Type | Source       | Author         | License             | Rights               | Modified |
-|---------------|------|--------------|----------------|---------------------|----------------------|----------|
-| Website Texts | Text | self-written | SoftwareLizard | All rights reserved | All rights reserved  | -        |
-| System fonts  | Font | OS default   | Various        | System license      | {i dont know -> tbd} | -        |
+| Asset         | Type | Source       | Author         | License             | Rights                                       | Modified |
+|---------------|------|--------------|----------------|---------------------|----------------------------------------------|----------|
+| Website Texts | Text | self-written | SoftwareLizard | All rights reserved | All rights reserved                          | -        |
+| System fonts  | Font | OS default   | Various        | System license      | Usage permitted via operating system license | -        |
 
 ## Icons:
 
