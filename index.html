@@ -72,6 +72,17 @@
                         <path d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75"/>
                     </svg>
                 </a></li>
+                <li>
+                    <button
+                            id="nav-auth-toggle"
+                            class="btn nav-auth-btn"
+                            type="button"
+                            aria-controls="auth-panel"
+                            aria-expanded="false"
+                    >
+                        Login
+                    </button>
+                </li>
             </ul>
         </nav>
     </div>
@@ -193,6 +204,93 @@
         </div>
     </section>
 
+    <section id="login" class="section">
+        <div class="container">
+            <div id="auth-actions" class="auth-actions">
+                <button
+                        id="auth-login-toggle"
+                        type="button"
+                        class="btn secondary auth-submit"
+                        aria-controls="auth-panel"
+                        aria-expanded="false"
+                        data-auth-toggle="login"
+                >
+                    Login
+                </button>
+
+                <button
+                        id="auth-signup-toggle"
+                        type="button"
+                        class="btn secondary auth-submit"
+                        aria-controls="auth-panel"
+                        aria-expanded="false"
+                        data-auth-toggle="signup"
+                >
+                    Sign up
+                </button>
+            </div>
+
+            <div id="auth-panel" class="card" hidden>
+                <form id="login-form" novalidate hidden>
+                    <h3 style="margin-top: 0;">Login</h3>
+
+                    <div class="field">
+                        <label for="login-email">E-mail</label>
+                        <input id="login-email" name="email" type="email" autocomplete="email" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="login-password">Password</label>
+                        <input id="login-password" name="password" type="password" autocomplete="current-password"
+                               required minlength="6"/>
+                    </div>
+
+                    <button class="btn primary auth-submit" type="submit">Login</button>
+                </form>
+
+                <form id="signup-form" novalidate hidden>
+                    <h3>Sign up</h3>
+
+                    <div class="field">
+                        <label for="signup-name">Name</label>
+                        <input id="signup-name" name="name" type="text" autocomplete="name" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="signup-email">E-mail</label>
+                        <input id="signup-email" name="email" type="email" autocomplete="email" required/>
+                    </div>
+
+                    <div class="field">
+                        <label for="signup-password">Password</label>
+                        <input id="signup-password" name="password" type="password" autocomplete="new-password"
+                               required minlength="6"/>
+                    </div>
+
+                    <div class="field">
+                        <label for="signup-password2">Repeat password</label>
+                        <input id="signup-password2" name="password2" type="password" autocomplete="new-password"
+                               required minlength="6"/>
+                    </div>
+
+                    <button class="btn primary auth-submit" type="submit">Sign up</button>
+                </form>
+            </div>
+
+            <p id="auth-status" class="notice" role="status" aria-live="polite" tabindex="-1" hidden></p>
+
+            <p
+                    id="auth-badge"
+                    class="auth-badge"
+                    role="status"
+                    aria-live="polite"
+                    hidden
+            >
+                Logged in
+            </p>
+        </div>
+    </section>
+
     <section id="checkout" class="section">
         <div class="container">
             <h2>Checkout</h2>
@@ -272,6 +370,7 @@
             <li><a href="/HardwareLizard-webshop/src/pages/data-privacy/data-privacy.html">Data privacy</a></li>
             <li><a href="/HardwareLizard-webshop/src/pages/license/license.html">License</a></li>
             <li><a href="/HardwareLizard-webshop/src/pages/copyright/copyright.html">Copyright</a></li>
+            <li><a href="/HardwareLizard-webshop/src/pages/contact/contact.html">Contact</a></li>
             <li><a href="/HardwareLizard-webshop/src/pages/about-us/about-us.html">About us</a></li>
         </ul>
     </div>

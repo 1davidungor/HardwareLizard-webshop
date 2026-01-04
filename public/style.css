@@ -305,6 +305,44 @@ figure {
     }
 }
 
+.btn.secondary {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    &:hover {
+        background: var(--muted);
+    }
+}
+
+.nav-auth-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+
+    background: var(--accent);
+    color: var(--muted);
+
+    font: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.nav-auth-btn:hover {
+    filter: brightness(1.1);
+}
+
+.nav-auth-btn:focus-visible {
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -400,6 +438,37 @@ input {
     margin-top: 3px;
 }
 
+.auth-actions {
+    margin-top: 18px;
+    margin-bottom: 16px;
+}
+
+.auth-toggle {
+    font-size: 1.5rem;
+    padding: 14px 18px;
+    border-radius: 14px;
+}
+
+#auth-panel {
+    margin-top: 12px;
+    padding: 22px;
+}
+
+.auth-submit {
+    margin-top: 14px;
+}
+
+.auth-badge {
+    margin-top: 16px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    background: rgba(209, 107, 90, 0.15);
+    color: #D16B5A;
+    border: 1px solid rgba(209, 107, 90, 0.35);
+}
+
 .site-footer {
     border-top: 1px solid var(--border);
     padding: 20px 0;
@@ -461,8 +530,11 @@ td {
     color: var(--muted);
 }
 
-tbody tr:hover {
-    background: rgba(255, 255, 255, 0.04);
+tbody tr:hover,
+tbody tr:nth-child(even):hover,
+tbody tr:nth-child(odd):hover {
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: inset 4px 0 0 var(--accent);
 }
 
 tbody tr:nth-child(even) {
@@ -472,4 +544,15 @@ tbody tr:nth-child(even) {
 .table-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+textarea {
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: rgba(0, 0, 0, 0.25);
+    color: var(--text);
+    font: inherit;
+    line-height: 1.5;
+    resize: vertical;
 }

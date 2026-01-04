@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>About us – HardwareLizard</title>
-    <meta name="description"
-          content="About us page for the SoftwareLizard Startup-company and HardwareLizard webshop."/>
+    <title>Contact – HardwareLizard</title>
+    <meta name="description" content="Contact page for the SoftwareLizard / HardwareLizard."/>
 </head>
+
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
@@ -79,79 +79,66 @@
 <main id="main" tabindex="-1">
     <section class="section">
         <div class="container">
-            <h1>About us - SoftwareLizard & HardwareLizard</h1>
+            <h1>Contact</h1>
 
-            <h2>Company overview</h2>
-            <p>
-                SoftwareLizard is a one-person software start-up focused on developing lightweight,
-                privacy-conscious tools that help users make better purchasing decisions in the IT hardware market.
-            </p>
+            <p>Please do not hesitate to contact us via the mentioned e-mail or the form below.</p>
 
-            <p>
-                Our main product, <strong>HardwareLizard</strong>, is a browser-based software solution that assists
-                users
-                in identifying competitive hardware deals across multiple online shops.
-            </p>
-
-            <h2>Our brand forms</h2>
-
-            <h3>Word mark</h3>
-            <p>
-                <strong>HardwareLizard</strong> is the registered word mark of the product.
-                The name combines the product domain (“Hardware”) with the metaphor of a lizard,
-                symbolizing awareness, adaptability, and fast reaction to changing environments.
-            </p>
-
-            <h3>Figurative mark (logo)</h3>
-            <p>
-                The HardwareLizard logo represents the brand visually.
-                It is used across the website, browser extension interface, and marketing materials.
-            </p>
-
-            <p>
-                <img
-                        class="brand-logo-big"
-                        src="/src/assets/brand/HardwareLizard-logo.png"
-                        alt="HardwareLizard"
-                />
-            </p>
-
-            <h3>Sound mark</h3>
-            <p>
-                HardwareLizard uses a short audio signal as a sound mark.
-                The sound is intended to be used for notifications and confirmations within the software.
-            </p>
-
-            <p>
-                <audio controls preload="none">
-                    <source src="/src/assets/brand/HardwareLizard-jingle.mp4" type="audio/mp4">
-                    Your browser does not support the audio element.
-                </audio>
-            </p>
-
-            <h2>Meaning and design rationale</h2>
-            <p>
-                The brand identity of HardwareLizard focuses on clarity, trust, and efficiency.
-                The visual design avoids aggressive colors and uses high contrast combinations
-                to ensure accessibility and readability.
-            </p>
-
-            <h2>Nizza classification</h2>
-            <ul>
-                <li><strong>Class 9:</strong> Downloadable software and browser extensions</li>
-                <li><strong>Class 35:</strong> Price comparison and consumer information services</li>
-                <li><strong>Class 42:</strong> Software as a Service (SaaS) and web-based software solutions</li>
+            <ul class="feature-list">
+                <li>
+                    <strong>E-mail:</strong>
+                    <a href="mailto:info@softwarelizard.example">info@softwarelizard.example</a>
+                </li>
+                <li>
+                    <strong>Response time:</strong> within 1–2 business days.
+                </li>
             </ul>
 
-            <h2>Trademark clearance</h2>
-            <p>
-                Prior to designing the brand, trademark searches were conducted using EUIPO eSearch,
-                TMview, and Madrid Monitor to identify potential conflicts with existing trademarks.
-                No identical or confusingly similar trademarks were found in the relevant Nizza classes.
-                A documentation regarding those searches can be found <a
-                    href="/HardwareLizard-webshop/src/pages/trademark-search/trademark-search.html">here</a>.
-            </p>
+            <h2>Message form</h2>
+
+            <form class="card" id="contact-form">
+                <div class="field">
+                    <label for="contact-name">Name</label>
+                    <input id="contact-name" name="name" type="text" autocomplete="name" required/>
+                </div>
+
+                <div class="field">
+                    <label for="contact-email">E-mail</label>
+                    <input id="contact-email" name="email" type="email" autocomplete="email" required/>
+                </div>
+
+                <div class="field">
+                    <label for="contact-topic">Topic</label>
+                    <input id="contact-topic" name="topic" type="text" required/>
+                </div>
+
+                <div class="field">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" required></textarea>
+                </div>
+
+                <p class="hint">
+                    By sending a message you confirm you have read the <a
+                        href="/HardwareLizard-webshop/src/pages/data-privacy/data-privacy.html">privacy notice</a>.
+                </p>
+
+                <button class="btn primary" type="submit">
+                    Submit form
+                </button>
+            </form>
+
+            <div>
+                <p id="form-status"
+                   class="notice"
+                   role="status"
+                   aria-live="polite"
+                   tabindex="-1"
+                   hidden>
+                    Your message has been submitted! Thank you for contacting us!
+                </p>
+            </div>
+
         </div>
+
     </section>
 </main>
 
@@ -164,11 +151,15 @@
             <li><a href="/HardwareLizard-webshop/src/pages/data-privacy/data-privacy.html">Data privacy</a></li>
             <li><a href="/HardwareLizard-webshop/src/pages/license/license.html">License</a></li>
             <li><a href="/HardwareLizard-webshop/src/pages/copyright/copyright.html">Copyright</a></li>
-            <li><a href="/HardwareLizard-webshop/src/pages/contact/contact.html">Contact</a></li>
-            <li><a href="#main" aria-current="page">About us</a></li>
+            <li><a href="#main" aria-current="page">Contact</a></li>
+            <li><a href="/HardwareLizard-webshop/src/pages/about-us/about-us.html">About us</a></li>
         </ul>
     </div>
 </footer>
+
+<audio id="success-jingle" preload="auto">
+    <source src="/src/assets/brand/HardwareLizard-jingle.mp4" type="audio/mp4">
+</audio>
 
 <script type="module" src="/src/main.js"></script>
 
