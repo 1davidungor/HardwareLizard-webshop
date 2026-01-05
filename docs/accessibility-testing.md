@@ -30,8 +30,10 @@ Tested Sites/States:
 
 ## Findings & fixes (ongoing log)
 
-- 28-12-2025: Increased focus/link contrast to meet minimum contrast requirements. -> 4.5
-- 30-12-2025: Increased text/background contrast to meet minimum contrast requirements while in checkout success
+- 28.12.2025: Increased focus/link contrast to meet minimum contrast requirements. -> 4.5
+- 30.12.2025: Increased text/background contrast to meet minimum contrast requirements while in checkout success
   state -> 4.5
 - 30-12-2025: Manually found that you couldn't reach the "choose {Plan}"-buttons with tab (keyboard) -> fixed
 - 04.01.2026: Tested all sites with AXE and lighthouse: no issues found
+- 05.01.2026: found issues with nav bar "login"-button, not enough contrast -> fixed: 4.5
+- 05.01.2026: tested every site again to ensure accessibility: no issues found
